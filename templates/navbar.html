@@ -10,7 +10,7 @@
                 <li class="nav-item">
                   <!-- Link--><a class="nav-link active" href="{% url 'store:home' %}">Home</a>
                 </li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalogue</a>
                   <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown">
                     {% if categories_menu %}
                       {% for cat_menu in categories_menu %}
@@ -22,19 +22,19 @@
                     
                 </li>
                 <li class="nav-item">
-                  <!-- Link--><a class="nav-link" href="{% url 'store:home' %}">Blog</a>
+<!--                  &lt;!&ndash; Link&ndash;&gt;<a class="nav-link" href="{% url 'store:home' %}">Blog</a>-->
                 </li>
                 <li class="nav-item">
-                  <!-- Link--><a class="nav-link" href="{% url 'store:home' %}">Contact</a>
+<!--                  &lt;!&ndash; Link&ndash;&gt;<a class="nav-link" href="{% url 'store:home' %}">Contact</a>-->
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto"> 
                 {% if request.user.is_authenticated %}           
-                  <li class="nav-item"><a class="nav-link" href="{% url 'store:cart' %}"> <i class="fas fa-dolly-flatbed mr-1 text-gray"></i>Cart<small class="text-gray">({{cart_items.count}})</small></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"> <i class="far fa-heart mr-1"></i><small class="text-gray"> (0)</small></a></li>
+<!--                  <li class="nav-item"><a class="nav-link" href="{% url 'store:cart' %}"> <i class="fas fa-dolly-flatbed mr-1 text-gray"></i>Cart<small class="text-gray">({{cart_items.count}})</small></a></li>-->
+<!--                  <li class="nav-item"><a class="nav-link" href="#"> <i class="far fa-heart mr-1"></i><small class="text-gray"> (0)</small></a></li>-->
                   {% comment %} <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-user-alt mr-1 text-gray"></i>My Account</a></li> {% endcomment %}
 
-                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-alt mr-1 text-gray"></i>My Account</a></a>
+<!--                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-alt mr-1 text-gray"></i>My Account</a></a>-->
                   
                   <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown">
                     
